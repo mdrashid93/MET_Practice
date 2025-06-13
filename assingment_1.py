@@ -98,8 +98,50 @@
 # marks.update({"chem":x})
 # print(marks)
 
-students=["md",99,"delhi"]
-str="hello"
-print(str[1])
-str[1]="o"
-print(students)
+# students=["md",99,"delhi"]
+# str="hello"
+# print(str[1])
+# str[1]="o"
+# print(students)
+# student={"name":"raaaz",
+#          "sub":{"hindi":99,
+#                 "urdu":89,
+#                 "math":78,
+#                 }}
+
+
+# #1 list inside list
+# fruits=["jace","apple"],
+#         ["orange","kiwi"],
+#         ["dragon","grapes"]
+        
+# fruits[0].append("fruit")
+# print(fruits)
+# a=fruits[1:2][0][1][-2]
+# print(a)
+
+# #tuple oinside a list
+# stidemt =[("alice",23,("bob",21))]
+# print(studemt[1.pop()])#erroe
+
+# #list inside tuple g
+# grup={[10,20],[30,40]}
+# print(int(str(grup[1][-2].replace9(3,2)))
+      
+#       #tuple inside list  list inside tple
+#       ptirny(studenty[0].get("markds","40"))
+#        )
+# print(student[0].updat({"markds":len(student[1])}))
+
+
+#creation
+a={}
+person={"name":"alex", "age":25,}
+a=person["name"]
+b=person.get("address","hyd")
+print(a,b)
+
+#modification
+person["age"]=355
+person.update({"age":35,"address":"hyderabad"})
+print(person)
