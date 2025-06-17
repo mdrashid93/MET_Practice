@@ -22,6 +22,8 @@ fruits=[["jack","apple"],#0
 #print(fruits[-1][-2])#dragon
 fruits[0].append("fruit")
 fruits[2].append("water")# third element me last me add water
+
+fruits[0].index
 #print(fruits)#jack,apple,fruits
 #a=[len(fruits[0]),len(fruits[1]),len(fruits[2])]
 #print(sum(a))#output is 8.
@@ -56,7 +58,7 @@ groups=([10,20],[30,40])
 # print(groups[1][0])
 #print(groups[1][-2])#30
 # print(groups[1][-2] )
-print(int(str(groups[1][-2].replace('3','2'))))
+#print(int(str(groups[1][-2].replace('3','2'))))
 # print(int(str(30).replace('3','2')))
 # print(int("30".replace('3','2')))
 # print(int("20"))#20
@@ -348,6 +350,15 @@ print(int(str(groups[1][-2].replace('3','2'))))
 # print(bachhe[1]["name"])
 
 
+student=["mdrashid",980.00,"delhi"]
+print(student[2])
+student[2]="mumbai"
+print(student)        
         
         
-        
+marks=[2,6,8,10,12]
+print(marks[:5])#2681012
+print(marks[0:5])#2681012
+print(marks[1:])#681012
+print(marks[0:])#2681012
+print(marks[-3:-1])
