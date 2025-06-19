@@ -272,4 +272,315 @@
 # print(x)
 
 #1. Write a function called greet_user that takes a named argument 'name' and returns 'Hello,{name}
+# def greet_user_name():
+#     return f"hello, {name}"
+# message=greet_user_name(name="mdrashid")
+# print(message)
+
+#  
+    
+# def greet_user(name):
+#     return f"Hello, {name}"
+
+# message = greet_user(name="Rashid")
+# print(message)
+
+# def user(name):
+#     return "hello",name
+# a=user(name="md")
+# print(a)
+
+# def names(name):
+#     return name
+# a=names(name="ras")
+# print(a)
+
+
+# def multi(a,b):
+#     return a*b
+# c=multi(2,4)
+# print(c)
+#2. Create a function 'check_temperature' that takes a named argument 'temp' and returns 'Fever' if temp > 99 else 'Normal'
+# def check_temprature(fever,normal):
+#     if fever>99:
+#         return "fever"
+#     else:
+#         return "normal"
+# a=check_temprature(99)
+# print(a)
+
+# def temprature():
+    
+    
+# def sum(a,b):
+#     sum=a+b
+#     print(sum)
+#     return sum
+# sum(5,10)
+
+# def cal_temprature(*,temp):
+#     if cal_temprature>99:
+#         print("fever")
+#     else:
+#         print("normal")
+# a=cal_temprature(99)
+# a=cal_temprature(90)
+# print(a)
+
+# def calc_sum(a,b):
+#     return a+b
+# a=calc_sum(1,2)
+# print(a)
+
+# def sum(v,w):
+#     return(v+w)
+# a=sum(1,2)
+# print(a)
+
+#3. Define a function 'get_last_fruit' that takes a list of fruits as input and returns the last fruit.
+# fruits=["mango","banana","apple","kiwi"]
+
+# def get_last_fruit(fruits):
+#     #print(fruits[-1])
+#     return fruits[-1]
+# print(get_last_fruit(fruits))
+
+
+# cities=["delhi","mumbai","pune","hyd"]
+# heros=["sal","srk","allu"]
+# def print_len(list):
+#     print(len(list))
+
+# print_len(cities)
+    
+
+
+
+
+
+
+# def cal_avg(a,b,c):
+#     sum=a+b+c
+#     avg=sum/3
+#     print(avg)
+#     return avg
+
+# cal_avg(1,2,3)
+#waf to find the factorial of n(n is the parameter)
+
+# n=5
+# fact=1
+# for i in range(1,n+1):
+#     fact*=i
+#     print(fact)
+    
+# def cal_fact(n):
+#     fact=1
+#     for i in range(1,n+1):
+#         fact*=i
+#         print(fact)
+# cal_fact(5)    
+
+#3. Define a function 'get_last_fruit' that takes a list of fruits as input and returns the last fruit
+#fruits=["banana","apple","grapes","oange"]
+
+# def get_last_fruit(fruits):
+#     print(fruits[-1])
+#     return fruits[-1]
+# fruits=["banana","apple","grapes","oange"]
+# #print(get_last_fruit(fruits))
+
+# def get_last_fruits(fruits):
+#     return fruits[-1]
+# print(get_last_fruits(fruits))
+
+#4 Create a function 'get_price_tag' that takes a 'price' and returns 'Expensive' if price > 1000 else "affordable"
+# def get_price_tag(price):
+#     if price >1000:
+#         return "expensive"
+#     else:
+#         return "affordable"
+
+# print(get_price_tag(100))
+# print(get_price_tag(2000))
+
+# def get(price):
+#     if price >1000:
+#         return "expensive"
+#     else:
+#         return "cheaper"
+# print(get(200))
+# print(get(2000))
+
+#5 wite a function 'format_user_info' that takes name and age as keyword arguments and returns a formatted string using f-string.
+# def user_info(name,age):
+#     arguments=name,age
+#     return f"name{md}&{"
+# print(user_info("md","rash"))
+
+# def format_user_info(name, age):
+#     return f"Name: {name}, Age: {age}"
+# print(format_user_info(name="Rashid", age=25))
+# Output: Name: Rashid, Age: 25
+# def formt_user(name,age):
+#     return f"name:{name},age:{age}"
+# print(formt_user(name="rashid",age=20))
+
+#6 Define a function 'uppercase_if_string' that takes one argument and returns it in uppercase if it's a
+#string, else return 'Invalid input'.
+# def lower_to_upper(text):
+#     return text.upper()
+
+# sentence="i am going to bihar"
+# print(lower_to_upper(sentence))    
+
+# def lower_to_upper(t):
+#     return t.upper()
+
+# sentence="im back"
+# print(lower_to_upper(sentence)) 
+
+# def upper_to_lower(t):
+#     return t.lower()
+
+# sentence="I AM GOING TO BIHAR"
+# print(upper_to_lower(sentence)) 
+
+#7. Write a function 'safe_divide' that takes two numbers as keyword arguments 'num' and 'den'.
+#Return the result if den is not 0, else return 'Cannot divide'
+# def safe_divide(*,num,den):
+#     if den!=0:
+#         return num/den
+#     else:
+#         return "cannot drive"
+# print(safe_divide(num=10, den=2))
+# print(safe_divide(num=5, den=0))
+
+
+# def add2numbers(number1,number2):
+#     result=number1+number2
+#     print("the sum is ", result)
+    
+# add2numbers(10,20)#argument10,20 
+
+# default arguments
+# def greetings(name="world"):
+#     print("hello",name,"!")
+
+#8. Write a function 'check_login' that takes a dictionary with 'username' and 'password'. Return
+#'Login successful' if password is not empty.
+#def check_login(username,password):
+
+def check_login(login_data):
+    if login_data.get('password'):
+        return "Login successful"
+    else:
+        return "Login failed"
+
+print(check_login({'username': 'rashid', 'password': '1234'}))  # ✅ Login successful
+print(check_login({'username': 'rashid', 'password': ''}))      # ❌ Login failed
+
+
+def check_login(credentials):
+    try:
+        if credentials['password']:
+            return "Login successful"
+        else:
+            return "Login failed"
+    except KeyError:
+        return "Login failed"
+
+
+
+# greetings() # runs wihtout error using defualt value
+
+# def goodmorning(name="good"):
+#     print("moring",name)
+
+# goodmorning()
+# goodmorning("rashid")
+
+# #arbitary positional arguments
+# def add2numbers(a,b):
+#     return a+b
+
+# result=add2numbers(10,20)
+# print(result)
+
+# def addnumbers(*args):# stores arguments as tuples
+#     print(type(args))
+#     return sum(args)
+# a=addnumbers(10,20,30,40,50)
+# print(a)
+
+# def greetings2(*names):
+#     for name in names:
+#         print(f"hello,{name}!")
+# greetings2("md_rashid","monu")
+
+# #arbitrary keyword arguments(**kwargs)
+# #store arguments as a dictionary
+# def print_details(**kwargs):
+#     print(type(kwargs))
+#     for key, value in kwargs.items():
+#         print(f"{key}:{value}")
+
+# print_details(name="d_rashid",age=22, city="bihar")
+
+# def square(a):
+#     return a*a
+# result=square(5)
+# print(result)
+
+# #anonymous function
+# f=lambda a,b :a+b
+# result=f(5,6)
+# print(result)
+
+#even numbers filter###
+# def is_even(n):
+#     return n%2==0
+# nums=[3,2,4,9,7,6,8,12]
+# evens=list(filter(is_even,nums))
+# print(evens)
+
+# def even_nums(i):
+#     return i%2==0
+# nums=[10,20,30,35,40,45,50,60,99]
+# even=list(filter(even_nums,nums))
+# print(even)
+
+# nun=[4,6,7,9,8,10,12,13,17,18,20]
+# evo=list(filter(lambda n:n%2==0 ,nun))
+# print(evo)
+
+#map
+# nums=[3,2,6,8,4,6,2,9]
+# even=(list(filter(lambda n:n%2==0,nums)))
+
+# doublees=list(map(lambda n:n*2,even))
+# print(doublees)
+
+#9. Create a function 'get_full_name' that takes 'first' and 'last' as named arguments and returns full name in title case.
+
+# def full_name_name(first,last):
+#     return full_name_name.title()
+# result=full_name_name("titlecase" rashid)
+# print(get_full_name(first="john", last="doe"))
+# print(result)
+
  
+def full_name(first,last):
+    name=f"{first}{last}"
+    return name.title()
+print(full_name(first="md", last="rashid"))
+
+#10. Write a function 'get_discounted_price' that takes 'price' and 'is_member'. If is_member is True,return price * 0.9 else return price.
+def get_discounted_price(price,is_member):
+    if is_member :
+        return price *0.9
+    else:
+        return price
+    
+print(get_discounted_price(1000,True))
+print(get_discounted_price(1000,False))

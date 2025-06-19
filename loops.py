@@ -254,8 +254,203 @@
 #         print("#",end=" ") ####
 #     print()
     
-for i in range(4):
-    for j in range(i+1):
-        print("#", end=" ")
-    print()
+# for i in range(4):
+#     for j in range(i+1):
+#         print("#", end=" ")
+#     print()
+# for b in range(5):
+#     for c in range(b+1):
+#         print("#", end=" ")
+#     print()
+    
+# for a in range(10):
+#     for d in range(a+2):
+#         print("@",end=" ")
+#     print()
+    
+        
+# if condition works only true condition
+# age=int(input("enter your age"))
+# if age>19:
+#     print("you are adult")
+# else:
+#     print("you are a child")
+    
+# a=200
+# b=800
+# if a>b:
+#     print("you are pass")
+#     continue
+# if b<a:
+#     print("you are fail")
+    
+# temprature=30
+# if temprature>25:
+#     print("its hot")
+# else:
+#     print("cold")
+    
+#if else condition statement
+#age=int(input("enter your age "))
+# if age>19:
+#     print("you are adult")
+# else:
+#     print("not")
+    
+# #if temprature < 25:
+#     print("its cold day")
+# else:
+#     print("its hot day")
+    
+# if elif else statement multiple condition
+# marks=int(input("enter your marks"))
+# if marks>=90:
+#     print("grade A")
+# elif marks>80:
+#     print("grade B")
+# elif marks>70:
+#     print("grade C") 
+# else:
+#     print("grade D")
+
+# 4.Nested if else statement
+#if else inside if else statement
+#multiple condition depend on each other
+# num=int(input("enter a number"))
+# if num >0:#checking positive number
+#     if num%2==0:
+#         print("this is a even number")
+#     else:
+#         print("this is a odd number")
+        
+# else:
+#     if num ==0:
+#         print("this is zero")
+#     else:
+#         print("this is a negative number")
+
+#conditional statement(ternary operator)
+# age=26
+# status="major" if age>=18 else "minor"
+# print(status)
+# value=None
+# if value:
+#     print("value is true")
+# else:
+#     print("value is false")#false
+
+# q1 write simple programme to determine if given year is leap year using user input.
+# 4 disible and 100 not  divisible , 400 disible
+#user input
+# year=int(input(" enter year(e. e. 2024):"))
+# #checking leap year
+# if( year %4 ==0 and year %100 !=0) or (year%400==0):
+#  print(f"{year} is lear year")
+# else:
+#     print(f"{year} is leap not year")
+
+#login authentication using conditional statement assume you have a predefined username and password
+#write a programme that prompt the user to enter a username and password and check whether they match provide 
+# appropriate message for folloing case
+#both username and password is correct
+#username is correct but password is incorrect
+#username is incorrect
+
+# #predefined username and password
+# predefined_username="md_rashid"
+# predefined_password="mdrashid123"
+
+# #prompts that user to enter a username and password
+# username=input("enter your username")
+# password=input("enter your password")
+
+# #username and password match
+# if username==predefined_username:
+#     if password==predefined_password:
+#         print("welcome login was successful.")
+#     else:
+#         print("incorrect password")
+        
+# else:
+#     print("invalid username")
+
+
+# #2 user input
+# print("enter pcm marks out of 100")
+# physics_marks=input("enter physics marks")
+# che_marks=input("enter che marks")
+# math_marks=input("enter math marks")
+
+# #eligibility check
+# if (math_marks >=65 and
+#    physics_marks >=55 and
+#     che_marks >=50 and 
+#    (math_marks+physics_marks+che_marks)>=180) or \
+#        (math_marks+physics_marks) >=140:
+#            print("you are eligible ")
+# else:
+#     ("you are not eligible")
+
+#1 print num  1 to 5 in sequence
+# for a in range(1,6):
+#     print(a, end=" ")
+# #2 print square of num from 1 to 5
+# for i in range(1,6):# power double star
+#     print(i**2 , end=" ")
+# #3 print even num from 1 to 10
+# for i in range(1,10):
+#  if i%2==0:
+#     print(i, end=" ")
+# #4 calculate sum of num from 1 to 10
+# total=0
+# for i in range(1,11):
+#     total +=i
+# print(f"sum is {total}") 
+#5 reverse a word using for loop "python"
+# words="python"
+# for i in range(len(words)-1,-1,-1):
+#     print(words[i], end=" ")
+#6.count vowel in string ,count the number of vowel in word "education"
+# vowel="aeiou"
+# word="education"
+# count=0
+# for char in word:
+#     if char in vowel:
+#         count +=1
+# print(f"total vowel in {word} is {count}")
+#7. fabonacci sequence up to 10 terms
+# a=0
+# b=1
+# print(a,b ,end=" ")
+# for i in range(8):
+#     next_term=a+b
+#     print(next_term,end=" ")
+#     a,b=b,next_term
+#8 calculate factorial number
+# n=5
+# factorial=1
+# for i in range(1,n+1):
+#     factorial*=i
+# print(f"factorial of {n} is {factorial}")        
+#9 check if a num is prime such as a 7 is prime num prime num has no divisodor itself only
+num=25
+for i in range(2,int(25** 0.5)+1):
+    if num% i==0:
+        is_prime=False
+        break
+if is_prime and num>1:
+    print(num,"is a prime number")
+else:
+    print("not a prime number")
+#10 count occurance of each character in string "programming"
+word="programming"
+char_count={}
+for char in word:
+    if char in char_count:
+        char_count[char] +=1
+    else:
+        char_count[char]=1
+for char, count in char_count.items():
+    print(char+":",count)
+        
         
