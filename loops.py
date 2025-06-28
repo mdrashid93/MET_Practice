@@ -433,24 +433,171 @@
 #     factorial*=i
 # print(f"factorial of {n} is {factorial}")        
 #9 check if a num is prime such as a 7 is prime num prime num has no divisodor itself only
-num=25
-for i in range(2,int(25** 0.5)+1):
-    if num% i==0:
-        is_prime=False
-        break
-if is_prime and num>1:
-    print(num,"is a prime number")
-else:
-    print("not a prime number")
-#10 count occurance of each character in string "programming"
-word="programming"
-char_count={}
-for char in word:
-    if char in char_count:
-        char_count[char] +=1
-    else:
-        char_count[char]=1
-for char, count in char_count.items():
-    print(char+":",count)
+# num=25
+# for i in range(2,int(25** 0.5)+1):
+#     if num% i==0:
+#         is_prime=False
+#         break
+# if is_prime and num>1:
+#     print(num,"is a prime number")
+# else:
+#     print("not a prime number")
+# #10 count occurance of each character in string "programming"
+# word="programming"
+# char_count={}
+# for char in word:
+#     if char in char_count:
+#         char_count[char] +=1
+#     else:
+#         char_count[char]=1
+# for char, count in char_count.items():
+#     print(char+":",count)
         
         
+# name=input("enter your name: ")
+# if name==" ":
+#     print("you did not enter your name")
+# else:
+#     print(f"hello{name}")
+
+# NAME=input("ENTER YOUR NAME:")
+# while name=="":
+    
+#     print("YOU DID NOT ENTER YOUR NAME")
+#     NAME=INPUT("ENTER YOUR NAME:")
+# print(f"hello{name}")
+
+# age=int(input("entr your age:"))
+# while age<0:
+#     print("age cant be negative")
+#     age=int(input("enter your age:"))
+# print(f"you are {age}year old")
+
+# food=input("enter your food u like(q to quit):")
+# while not  food=="q":
+#     print(f"you like {food}")
+#     food=input("enter another food you like (q to quit:)")
+# print("bye")
+# num=int(input("enter a # between 1-10:"))
+# while num <1 or num>10:
+#     print(f"{num} is not valid")
+#     num=int(input("enter a # between 1-10:"))
+# print(f"your number is{num}")
+# nu=int(input("enter your number between 1-10:"))
+# while nu<1 or nu>10:
+#     print(f"enter {nu} invalid number")
+#     nu=int('enter valide num 1-10')
+# print(f"enter your valid {nu}")
+
+# for number in range(3):
+#     print("attempt",number+1,(number+1)*"$")
+# for number in range(50):
+#     print("i love you 5 attempt but fail",number+5,(number+5)*"10")
+
+# for number in range(1,6):
+#     print("attempt",number,number*".")
+# successful=True
+# for number in range(3):
+#     print("attempt")
+#     if successful:
+#          print("succesful")
+#          break
+
+# successful=False
+# for number in range(3):
+#     print("attempt")
+#     if successful:
+#          print("succesful")
+#          break
+
+# successful=True
+# for number in range(6):
+#     print("attempt")
+#     if successful:
+#         print(successful)
+#         break
+# successful=False
+# for number in range(9):
+#     print("attempt")
+#     if successful:
+#         print("successful")
+#         break
+# else:
+#     print("attempt 9 time and fail")
+
+# for x in range(5):
+#     for y in range(3):
+#         print(f"{x},{y}")
+# for x in "python":
+#     print(x)
+
+#upper to lower and lower to upper
+# def swap_case(s):
+#     new_s=""
+#     for i in s:
+#         if i.upper():
+#             new_s+=i.lower()
+#         else:
+#             new_s+=i.lowr()
+#         return new_s
+#     if __name__=='__main__':
+#         s=input()
+#         result=swap_case(s)
+#         print(result)
+
+# import math
+# import os
+# import random
+# import re
+# import sys
+# if __name__=='__main__':
+#     n=int(input().strip())
+#     if n%2 !=0:
+#         print("weird")
+#     elif n%2 ==0 and 2<n<5:
+#         print("not weird")
+#     elif n%2 ==0 and 6<n<20:
+#         print("weird")
+#     elif n%2 ==0 and n>20:
+#         print("not weird")
+
+#merge dictionary with summatation
+# dict1={'a':10,'b':20,'c':30}
+# dict2={'b':15,'c':35,'d':25}
+# def merge_dict(dict1,dict2):
+#     results=dict1.copy
+#     for key, value in dict2.items():
+#         if key in results:
+#             result[key]+=value
+#         else:
+#             result[key]=value
+#     return result
+# print(merge_dict(dict1,dict2))
+
+
+
+# dict1={'a':10,'b':20,'c':30}
+# dict2={'b':15,'c':35,'d':25}
+# def merge_dict(dict1,dict2):
+#     results=dict1.copy
+#     for key, value in dict2.items():
+#         if key in results:
+#             result[key]+=value
+#         else:
+#             result[key]=value
+#     return result
+# print(merge_dict(dict1,dict2))
+
+# flatten a nested dictionary
+# data={'a':{"b:{c}}}
+a=["cat","dog","monkey","cow"]
+#output: catdo,dogmi,monkeyco,cowca
+for s in a:
+    print(s, end=" ")
+    
+# #1. Create a class Remote and a class TV. Add a method turn_on() in TV. Inside Remote, create an
+# instance of TV and call tv.turn_on() from Remote. Now write similar code for turn_off().
+#lass Remote:
+    
+
+ 

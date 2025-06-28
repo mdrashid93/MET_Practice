@@ -471,24 +471,24 @@
 #'Login successful' if password is not empty.
 #def check_login(username,password):
 
-def check_login(login_data):
-    if login_data.get('password'):
-        return "Login successful"
-    else:
-        return "Login failed"
+# def check_login(login_data):
+#     if login_data.get('password'):
+#         return "Login successful"
+#     else:
+#         return "Login failed"
 
-print(check_login({'username': 'rashid', 'password': '1234'}))  # ✅ Login successful
-print(check_login({'username': 'rashid', 'password': ''}))      # ❌ Login failed
+# print(check_login({'username': 'rashid', 'password': '1234'}))  # ✅ Login successful
+# print(check_login({'username': 'rashid', 'password': ''}))      # ❌ Login failed
 
 
-def check_login(credentials):
-    try:
-        if credentials['password']:
-            return "Login successful"
-        else:
-            return "Login failed"
-    except KeyError:
-        return "Login failed"
+# def check_login(credentials):
+#     try:
+#         if credentials['password']:
+#             return "Login successful"
+#         else:
+#             return "Login failed"
+#     except KeyError:
+#         return "Login failed"
 
 
 
@@ -570,17 +570,243 @@ def check_login(credentials):
 # print(result)
 
  
-def full_name(first,last):
-    name=f"{first}{last}"
-    return name.title()
-print(full_name(first="md", last="rashid"))
+# def full_name(first,last):
+#     name=f"{first}{last}"
+#     return name.title()
+# print(full_name(first="md", last="rashid"))
 
 #10. Write a function 'get_discounted_price' that takes 'price' and 'is_member'. If is_member is True,return price * 0.9 else return price.
-def get_discounted_price(price,is_member):
-    if is_member :
-        return price *0.9
-    else:
-        return price
+# def get_discounted_price(price,is_member):
+#     if is_member :
+#         return price *0.9
+#     else:
+#         return price
     
-print(get_discounted_price(1000,True))
-print(get_discounted_price(1000,False))
+# print(get_discounted_price(1000,True))
+# print(get_discounted_price(1000,False))
+
+#1. Write a function that accepts any number of numbers using *args and returns the sum of all numbers
+# def numbers(*args):
+#     total=args
+#     args=(10+20+30+40)
+#     return args
+# sum=numbers(10,20,30,40)
+# print(sum)
+
+#2. Create a function that accepts any number of keyword arguments (**kwargs) and returns a string of all keys joined by commas.
+# def get_keys_string(**kwargs):
+#     return " ,".join(kwargs.keys())
+# result=get_keys_string(Name="md_rashid",age=20,country="india")
+# print(result)
+
+# def get_key_value_string(**kwargs):
+#     return",".join(f"{key}={value}"for key,value in kwargs.items())
+# result=get_key_value_string(name="MD_RASHID",AGE=33,CITY="punjab")
+# print(result)
+#3. Write a program that keeps asking for input using input() until the user types 'exit'. Print each input vlue entered.
+# def asking_value(**kwargs):
+#     #kwargs=input("enter your value")
+#     return ",".join(kwargs.value())
+# result=asking_value(name="md",age=63,city="kolkata")
+# print(result)
+# while True:
+#     user_input=input("enter something (type exit to quit)")
+#     if user_input=="exit":
+#         break
+#     print("you enter :",user_input)
+    
+#4. Write a while loop that prints numbers starting from 1. Break the loop if the number reaches 5.
+# a=1
+# while a <6:
+#     print(a)
+#     a+=1
+# while a<10:
+#     print(a,end="$")
+#     a+=2
+#5 Write a while loop that asks the user to enter a number. If the number is negative, use continue to
+#ask again. Stop when a positive number is entered.\
+# while True:
+#     num=int(input("enter a number:"))
+#     if num <0:
+#         continue#skip to next loop iteration
+#     break# stop the loop if num is positive
+# print("enter positive number")
+#6.create a function that takes *args and returns the largest value without using max(). Use a while
+#loop to find the largest.
+# def find_largest(*args):
+#     if not args:
+#         return None#retrun none if no arguments are given 
+#     i=1
+#     largest=args[0]
+#     while i<len(args):
+#         if args[i]>largest:
+#             largest=args[i]
+#         i+=1
+#     return largest
+# print(find_largest(10,80,90,30,60,))
+
+
+# def find_largest(*args):
+#     largest = args[0]
+#     i = 1
+#     while i < len(args):
+#         if args[i] > largest:
+#             largest = args[i]
+#         i += 1
+#     return largest
+
+# def find_larger(*args):
+#     larger=args[0]
+#     i=1
+#     while i < len(args):
+#         if args[i]>larger:
+#             larger=args[i]
+#             i+=1
+#     return larger
+# print(find_larger(3,9,5,7,6,1))
+
+#arbitary
+# def abcd(a,b=2):
+#     pass
+# abcd(2)
+# def sdf(*as):
+#     return as
+# sdf(1,2)
+    
+# find the intersection (common elements of two list)
+# list1=[1,2,3,4,5]
+# list2=[4,5,6,7,8]
+# #using for loop
+# def intersection_loop(list1, list2):
+#     common_list=[]
+#     for item in list1:
+#         if item in list2 and item  not in common_list:
+#             common_list.append(item)
+#     return common_list 
+# print(intersection_loop(list1,list2))
+# def intersection_comp(list1,list2):
+#     return[item for item in list1 if item in list2]
+# print(intersection_comp(list1,list2))
+# find the most frequent element in list
+# numbers=[1,2,2,3,3,3,4]
+# def most_freq(ist):
+#     maxcount=0 
+#     most_freq=None
+#     for item in ist:
+#         count=ist.count(item)
+#         if count>maxcount:
+#             maxcount=count
+#             most_freq=item 
+
+#     return most_freq
+# print(most_freq(numbers))
+# numbers=[1,2,2,3,3,3,4,7,7,7,7]
+# def mos_freq(list):
+#     max=0
+#     mos_freq=None
+#     for item in list:
+#         count=list.count(item)
+#         if count>max:
+#             max=count
+#             mos_freq=item
+#     return mos_freq
+# print(mos_freq(numbers)) 
+
+#10. Write a function that asks for user input using input() inside a while loop until a valid age (>0) is entered, then returns the age.
+# def valid_age():
+#     while True:
+#         try:
+#             age=int(input("enter your age"))
+#             if age>0:
+#                 return 0
+#             else:
+#                 print("age must be greater than 0 try again")
+#         except ValueError:
+#             print("invalid input please enter your number")
+# get_valid_age=valid_age()
+# print(f"your age is:{valid_age}")
+
+# find common ele in list
+# list1=[1,2,3,4,5]
+# list2=[4,5,6,7,8]
+# def intersection_loop(list1,list2):
+#     common_list=[]
+#     for item in list1:
+#         if item in list2 and item not in common_list:
+#             common_list.append(item)
+#     return common_list
+# print(intersection_loop(list1,list2))
+# #using list comprehension
+# def comprehension(list1,list2):
+#     return[item for item in list1 if item in list2]
+# print(comprehension(list1,list2)) 
+
+# # find the most frequent element in a list
+# numbers=[1,2,3,4,4,6,6,6]
+# def freq(list):
+#     max_count=0
+#     freq=None
+#     for item in list:
+#         count=list.count(item)
+#         if count>max_count:
+#             max_count=count
+#             freq=item
+#     return freq
+# print(freq(numbers))
+
+# find cumulative sum of a list
+number=[1,2,3,4,5]
+# def cumulative_sum():
+#     cum_sum=[]
+#     total=0
+#     for num in list:
+#         total+=num
+#         cum_sum.append(total)
+#     return cum_sum
+
+# def cum(list):
+#     sum=[]
+#     totl=0
+#     for num in list:
+#         totl+=num
+#         sum.append(totl)
+#     return sum
+# print=(cum(number))
+# remove duplicate from list
+# fruits=["apple","banana","kela","seb","mango","aam","apple","kela","banana"]
+# def remove_ele(list):
+#     remove=[]
+#     seen=set()
+#     for item in list:
+#         if item not in seen:
+#             remove.append(item)
+#             seen.add(item)
+#     return remove
+# print=(remove_ele(fruits))
+
+# numbers=[1,2,3,3,3,4,4,5]
+# def frequent(numbers):git
+#     max_count=0
+#     frequent=None
+#     for number in numbers:
+#         count=list.count(number)
+#         if count> maxcount:
+#             maxcount=count
+#             frequent=number
+#     return frequent
+# print(frequent(numbers))
+# num=[1,2,3,4,5]
+# def cumulative_sum(lost):
+#     cum_sum=[]
+#     total=0
+#     for num in lost:
+#         total+=1
+#         cum_sum.append(total)
+#     return cum_sum
+# print(cumulative_sum(num)) 
+
+#function to convert celsius to fahrenheit
+def celsius_to_fahrenheit(celsius):
+    fahrenheit=(celsius*9/5)+32
+#call function
+celsius_to_fahrenheit(50)

@@ -54,7 +54,7 @@
 # print("receive google paymenet")
 # print("receive pay phone ")
  
-a=3
+# a=3
 # if True:
 #      print(a)
      
@@ -190,18 +190,20 @@ a=3
    #how many the user wants
 #4 write the code
 
-menu={
-    "dosa":35,
-    "itly":45,
-    "wada":50,
-    "puri":40,
-    "upma":60,
-}
-_dish_1choices=input("what do you wants")
-_dish_1quantity=int(input("howmany")) 
+# menu={
+#     "dosa":35,
+#     "itly":45,
+#     "wada":50,
+#     "puri":40,
+#     "upma":60,
+# }
+# _dish_1choices=input("what do you wants")
+# _dish_1quantity=int(input("howmany")) 
 
-_dish_2choices=input("what do you wants")
-_dish_2quantity=int(input("howmany"))
+# _dish_2choices=input("what do you wants")
+# _dish_2quantity=int(input("howmany"))
 
-_total_bill=(_dish_1quantity*menu.get(_dish_1choices))+(_dish_2quantity*menu.get(_dish_2choices))
-print(f"your bill is RS{_total_bill}")
+# _total_bill=(_dish_1quantity*menu.get(_dish_1choices))+(_dish_2quantity*menu.get(_dish_2choices))
+# print(f"your bill is RS{_total_bill}")
+a="hello"
+print("hello")
