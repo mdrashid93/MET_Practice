@@ -599,5 +599,3 @@ for s in a:
 # instance of TV and call tv.turn_on() from Remote. Now write similar code for turn_off().
 #lass Remote:
     
-
- 

@@ -65,9 +65,43 @@
 
 # print(mytuple)
 
-tuple1 = ('a', 'b' , 'c')
-tuple2 = (1, 2, 3)
-tuple3 = tuple2 + tuple1
-print(tuple3)
+# tuple1 = ('a', 'b' , 'c')
+# tuple2 = (1, 2, 3)
+# tuple3 = tuple2 + tuple1
+# print(tuple3)
+
+# simple note taking app
+def add_note():
+   note=input("enter your notes")
+   with open("notes.txt","a") as f:
+      f.write(note +"\n")
+   print("note saved")
+
+def read_note():
+   with_open("note.txt","r")  
+   notes=f.readlines()
+   print("your notes")
+   for note in notes:
+      print(f"- {note.strip()}")
+
+      
+   
+
+while True:
+   print("\n1. add notes \n2. read notes \n3 exit")
+   choice=input("choice")
+   if choice=="1":
+      add_notes()
+   elif choice=="2":
+      read_notes()
+   elif choice=="3":
+      break
+   else:
+      print("invalid choice")
+       
+   """hiichi
+   lj  zsdlk
+   lbzjds
+   """
 
 

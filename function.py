@@ -785,7 +785,7 @@ number=[1,2,3,4,5]
 # print=(remove_ele(fruits))
 
 # numbers=[1,2,3,3,3,4,4,5]
-# def frequent(numbers):git
+# def frequent(numbers):
 #     max_count=0
 #     frequent=None
 #     for number in numbers:

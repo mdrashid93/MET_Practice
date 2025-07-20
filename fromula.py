@@ -138,3 +138,26 @@
 # my_function("India")
 # my_function()
 # my_function("Brazil")
+
+class Time:
+    def __init__(self,hours,minutes,seconds):
+        self.hours=hours
+        self.minutes=minutes
+        self.seconds=seconds
+#function to convert time to total seconds
+def time_to_seconds(t):
+    return t.hours*3600 + t.minutes * 60 + t.seconds
+#function to convert seconds back to time format
+def seconds_to_time(total_seconds):
+    hours=total_seconds//3600
+    total_seconds %= 3600
+    minutes=total_seconds//60
+    seconds=total_seconds%60
+    return Time(hours,minutes,seconds)
+#function to find diff
+def find_time_diff(t1,t2):
+    sec1=time_to_seconds(t1)
+    sec2=time_to_seconds(t2)
+    diff_seconds=abs(sec1-sec2)#absolute diff
+    return seconds_to_time(diff_seconds)
+     

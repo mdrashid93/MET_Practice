@@ -68,7 +68,7 @@ print(student1.team)
 #polymorphism
 
 #********************************************ABSTRACTION****************************************************************************
-# HIDING UNNECESSARY DETAILS FR0M USERS THROUGH CLASS, METHODS
+# HIDING UNNECESSARY DETAILS FR0M USERS THROUGH CLASS, METHODS only showing essential feature
 class Student:
     def __init__(self,name,grade,percentage,team):
         self.grade=grade#attribute
@@ -88,6 +88,7 @@ student1.student_details()
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ENCAPSULATION @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # RESTRICT ACCESS TO CERTAIN ATTRIBUTES OR METHODS TO PROTECT DATA AND ENFORCE CONTROLLED ACCESS 
+#wrapping data and function into a single units(objects)
 class Student:
     def __init__(self,name,grade,percentage):
         self.grade=grade#attribute
@@ -184,3 +185,53 @@ grad_student1=GraduateStudent("apple",12,96,"pcm")
 
 student1.student_details()
 grad_student1.student_details()
+
+
+
+
+
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+class Car:
+    def __init__(self):
+        self.acc=False
+        self.brk=False
+        self.clu=False
+        
+    def start(self):
+        self.clu=True
+        self.acc=True
+        print("car started")
+
+car=Car()
+car.start()
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#1create account class with 2 attributes balance and account number
+# create debit method for debit , credit and printing the balance
+
+class Account:
+    def __init__(self,acc_no,balance):
+        self.acc_no=acc_no
+        self.balance=balance
+    #debit method
+    def debit(self,amount):
+        self.balance-=amount
+        print("rs",amount,"was debited",self.get_balance())
+        print("total balance")
+    #credit method
+    def credit(self,amount):
+        self.balance+=amount
+        print("rs",amount, "was credited",self.get_balance())
+    #get balance
+    
+    def get_balance(self):
+        return self.balance
+         
+    
+acc=Account(22222,10)
+# print(acc.acc_no)
+# print(acc.balance)
+acc.credit(200)
+acc.debit(100)
+acc.get_balance()
+print(acc.balance)
+acc.credit(2500)

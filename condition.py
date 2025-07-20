@@ -205,5 +205,15 @@
 
 # _total_bill=(_dish_1quantity*menu.get(_dish_1choices))+(_dish_2quantity*menu.get(_dish_2choices))
 # print(f"your bill is RS{_total_bill}")
-a="hello"
-print("hello")
+# a="hello"
+# print("hello")
+
+
+
+n=int(input("enter number of row needed"))
+for i in range(n):      #row
+   for j in range(i+1): #column
+      print(j+1, end=" ")
+   print()
+   
+      

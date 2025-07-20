@@ -134,14 +134,136 @@
 # print(student[0].updat({"markds":len(student[1])}))
 
 
-#creation
-a={}
-person={"name":"alex", "age":25,}
-a=person["name"]
-b=person.get("address","hyd")
-print(a,b)
+# #creation
+# a={}
+# person={"name":"alex", "age":25,}
+# a=person["name"]
+# b=person.get("address","hyd")
+# print(a,b)
 
-#modification
-person["age"]=355
-person.update({"age":35,"address":"hyderabad"})
-print(person)
+# #modification
+# person["age"]=355
+# person.update({"age":35,"address":"hyderabad"})
+# print(person)
+
+# # ATM SYSTEM
+# def check_balance(balance):
+#     print(f"your current balance is {balance}")
+    
+# def atm():
+#     balance=10000
+#     print("welcome to ATM ")
+
+# def withdraw(balance,amount):
+#     if amount>balance:
+#         print("insufficient balnce")
+#     else:
+#         balance=balance-amount
+#         print(f"withdraw successful and new balance : Rupees{balance}")
+# def deposit(balance, amount):
+#     balnce=balnce+amount
+#     print(f"deposit successful and new balance: rupees{balance}")
+#     return balance
+    
+# while True:
+#         print("\n choice option")
+#         print("1 check balance")
+#         print("2 withdraw money")
+#         print("3 deposit money")
+#         print("4 exit")
+        
+#         choice=input("enter your choice(1-4)")
+        
+#         if choice=="1":
+#             check_balance(balance)
+#         elif choice=="2":
+#             amount=float(input("enter enter amount of withdraw rupees"))
+#             balnce=withdraw(balance,amount)
+#         elif choice=="3":
+#             amount=float(input("enter amount to deposit rupees"))
+#             balnce=deposit(balance,amount)
+#         elif choice=="4":
+#             print("exit")
+#             break
+#         else:
+#             print("invalid choice")
+            
+# atm()
+        
+        
+#----------------------------------------------------------------------------
+#define the menu of restuarant
+# menu={
+#     'Pizza':40,
+#     'Pasta':50,
+#     'Burger':60,
+#     'Salad':70,
+#     'Coffee':80,  
+# }
+# # print(menu)
+# print("Welcome to Pi restuarant")
+# print( "Pizza:RS40 \n Pasta:RS50\n Burger:RS60\n Salad:RS70\n Coffee:80")
+
+# order_total=0
+# item_1=input("Enter the name of order you want to order=")
+# if item_1 in menu:
+#     order_total+=menu[item_1]#0+50
+#     print(f"your item{item_1}has been added in your order")
+# else:
+#     # print("please order something else we can serve you")
+#     print(f"order item {item_1}is not available yet")
+
+# another_order=input("do you want to another item? (yes/no)")
+# if another_order=="yes":
+#     item_2=input("enter the name of second item")
+#     if item_2 in menu:
+#         order_total+=menu[item_2]
+#         print(f"itme{item_2}has been addded to order")
+#     else:
+#         print(f"order{item_2}not available")
+# print(f"total amount of item is to pay{order_total}")
+
+
+
+
+#---------------------------------------------------------------
+# password generator
+
+import random
+import string 
+def generate_password(min_length,numbers=True,special_character=True):
+    #generate_password(10,False,False)
+    letters=string.ascii_letters
+    digits=string.digits
+    special=string.punctuation
+    # print(letters,digits,special)
+    character=letters
+    if numbers:
+        character+=digits
+    if special_character:
+        character+=special
+    pwd=""
+    meet_criteria=False
+    has_number=False
+    has_special=False
+    
+    while not meet_criteria or len(pwd)< min_length:
+        new_char=random.choice(character)
+        pwd+= new_char
+        
+        if new_char in digits:
+            has_number=True
+        elif new_char in special:
+            
+        
+
+generate_password(10)
+    
+    
+
+        
+        
+
+
+
+
